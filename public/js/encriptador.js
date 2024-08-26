@@ -1,3 +1,9 @@
+/**
+ * Inicializa la funcionalidad del formulario de encriptación/desencriptación cuando el DOM está completamente cargado.
+ *
+ * @listens DOMContentLoaded
+ */
+
 document.addEventListener('DOMContentLoaded', function() {
     let myForm = document.querySelector("#myForm");
     let form_ouput = document.querySelector(".form-ouput");
@@ -8,10 +14,26 @@ document.addEventListener('DOMContentLoaded', function() {
     let popupMessage = document.querySelector("#popup-message");
     let closePopup = document.querySelector("#close-popup");
 
+
+    /**
+     * Valida que el texto contenga solo letras minúsculas y espacios.
+     *
+     * @param {string} texto - El texto a validar.
+     * @returns {boolean} True si el texto es válido, false en caso contrario.
+     */
+
+
+
     function validarTexto(texto) {
         const regex = /^[a-z\s]*$/;
         return regex.test(texto);
     }
+
+    /**
+     * Muestra un popup con un mensaje.
+     *
+     * @param {string} message - El mensaje a mostrar en el popup.
+     */
 
     function showPopup(message) {
         popupMessage.textContent = message;
@@ -21,6 +43,13 @@ document.addEventListener('DOMContentLoaded', function() {
     closePopup.addEventListener('click', function() {
         popup.style.display = 'none';
     });
+
+    /**
+     * Maneja el envío del formulario para encriptar o desencriptar el texto.
+     *
+     * @listens submit
+     * @param {Event} e - El evento de envío del formulario.
+     */
 
     myForm.addEventListener("submit", function(e){
         e.preventDefault();
@@ -52,6 +81,12 @@ document.addEventListener('DOMContentLoaded', function() {
             showPopup("Ocurrió un error al procesar su solicitud.");
         });
     });
+
+    /**
+     * Maneja el evento de clic en el botón de copiar.
+     *
+     * @listens click
+     */
 
     btn_copy.addEventListener("click", function(e){
         let range = document.createRange();

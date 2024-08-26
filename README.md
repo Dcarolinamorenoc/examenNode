@@ -40,6 +40,7 @@ npm run dev
 
 
 
+
 # Encriptador
 
 **Tiempo de ejecución**: 4 Horas
