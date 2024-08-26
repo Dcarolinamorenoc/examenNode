@@ -137,6 +137,12 @@ Al finalizar las cuatro horas, se espera que el equipo entregue una aplicación 
 ¡Fenterlimescimesdaidenters, hais lobergraidober dentersbloberqufatenterair enterstenter menternsaijenter!
 ```
 
+El mensaje secreto es:
+
+```
+felicidades has logrado desbloquear este mensaje
+```
+
 
 
 # Rúbrica Evaluativa
