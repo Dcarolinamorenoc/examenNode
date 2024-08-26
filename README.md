@@ -62,17 +62,61 @@ El desafío principal radica en implementar una aplicación funcional que cumpla
 ## 1. **Encriptación y Desencriptación Bidireccional:**
    - Implementar la lógica de encriptación donde cada letra específica ("e", "i", "a", "o", "u") se transforma en una cadena correspondiente ("enter", "imes", "ai", "ober", "ufat").
    - Desarrollar la funcionalidad inversa que permita a los usuarios desencriptar el texto, devolviendo las cadenas encriptadas a su letra original.
+
+     
+
+     Cuando colocamos:
+
+     ```js
+     e i a o u
+     ```
+
+
+     obtendremos una respuesta asi
+
+     ```js
+     enter imes ai ober ufat
+     ```
+
+     
+
 ## 2. **Interfaz de Usuario Intuitiva:**
    - Crear una interfaz en la que los usuarios puedan ingresar el texto para encriptar o desencriptar.
+
    - Incluir opciones claras para que el usuario elija entre las dos funciones disponibles (encriptar o desencriptar).
+
    - Mostrar el resultado de la operación en la pantalla de manera clara.
+
+     
+
+![img](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcIv6XZEx2FIFCeMKjWzK21ui5E6-wlf28qFM9iezJRfpOz0OC2Q9TEJUWs6FgjO3z5wxGlgYbMY8CteERl2Kn_3Gv82MqYYfUxrrLnyTHMIY1FZoOI-eSpJPkIfHDMVSroYkwyfljRDV58V9Aez-aYoNr5?key=mdEDWaEvFRcZOP8-VYH9mQ)
+
+​	
+
 ## 3. **Restricciones y Validaciones:**
    - Asegurar que el sistema funcione exclusivamente con letras minúsculas, sin permitir el uso de caracteres especiales o letras acentuadas.
    - Implementar mecanismos que validen la entrada del usuario para cumplir con estas restricciones.
+
+![img](https://lh7-rt.googleusercontent.com/docsz/AD_4nXe3Xm_MOJjzY0-msoPzTcP894g_3fUHw-6E0OjkAQ3tI_VYLzxjoG3et5RRb0iFLdyhJxRSGO1VvMXySfe-XMlTxrFjJ68-3v616a4AgMI-F1_r0nPWGNmD5Dq-c-Ezf4pQ7YFoRZ0p0_WI6Hi3K8Pmk7U?key=mdEDWaEvFRcZOP8-VYH9mQ)
+
+
+
 ## 4. **Funcionalidad Extra de Copiado:**
+
    - Incluir un botón adicional que permita a los usuarios copiar el texto encriptado o desencriptado al portapapeles con un solo clic, simulando la función de "Ctrl+C".
+
+![img](https://lh7-rt.googleusercontent.com/docsz/AD_4nXegqcYs938j1nrxjoZUfwNnLSsWqW_cEx9is7mQuJyxpsefTs13pX_ChOgHsmH2ItDw7cc7XoFAShcVHE8NHId7M7mYW7GhGKtIIkdRH_uMJtAtpoJ-s4fIfb6BLwta5B9zAFVhXYaUrsRRHV5moTSGUU8?key=mdEDWaEvFRcZOP8-VYH9mQ)
+
+
+
 ## 5. **Gestión del Tiempo y Proceso de Desarrollo:**
    - Organizar el trabajo en un entorno ágil utilizando Trello para gestionar tareas. Aunque el uso de Trello no será evaluado, será crucial para mantener el progreso bajo control y asegurarse de cumplir con el plazo de cuatro horas.
+
+​	Link del Trello:
+
+```js
+https://trello.com/b/U6wcoIW7/filtro-node
+```
 
 
 
