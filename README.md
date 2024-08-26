@@ -1,4 +1,44 @@
-[TOC]
+## Estudiante:
+
+```js
+Diana Carolina Moreno Cárdenas
+```
+
+
+
+### Instalaciones Necesarias
+
+- Necesario para conectar y interactuar con la base de datos MongoDB.
+
+```js
+npm i mongodb
+```
+
+- Framework web esencial para crear y gestionar el servidor de la aplicación.
+
+```js
+npm i express
+```
+
+- Permite cargar variables de entorno desde un archivo .env, crucial para la configuración segura de la aplicación.
+
+```js
+npm i dotenv
+```
+
+- Utilizado para validar y sanear los datos de entrada en las rutas de la API.
+
+```js
+npm i express-validator
+```
+
+- Para iniciar la aplicación en modo de desarrollo, utiliza el siguiente comando:
+
+```js
+npm run dev
+```
+
+
 
 # Encriptador
 
