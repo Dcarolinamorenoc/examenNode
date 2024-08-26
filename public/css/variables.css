@@ -9,3 +9,21 @@
     --bg-button-prymary: #0A3871;
     --bg-button-secondary: #d8dfe8;
 }
+
+@font-face {
+    font-family: "Inter_24pt-Bold";
+    src: url(../storage/font/Inter/Inter_24pt-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Inter_18pt-Regular";
+    src: url(../storage/font/Inter/Inter_18pt-Regular.ttf);
+}
+@font-face {
+    font-family: "Inter_28pt-Regular";
+    src: url(../storage/font/Inter/Inter_28pt-Regular.ttf);
+}
+@font-face {
+    font-family: "Inter_24pt-Regular";
+    src: url(../storage/font/Inter/Inter_24pt-Regular.ttf);
+}

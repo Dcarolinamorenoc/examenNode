@@ -1,7 +1,7 @@
 {
   "name": "examennode",
   "version": "1.0.0",
-  "description": "[TOC]",
+  "description": "Filtro Node",
   "main": "app.js",
   "scripts": {
     "test": "node --watch server/main.js",
