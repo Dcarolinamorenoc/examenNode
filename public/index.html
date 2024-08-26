@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./storage/img/lupa.png" type="image/png">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Filtro Node</title>
+</head>
+<body>
+    <header>
+        <div class="header_container">
+            <img class="container_logo" src="./storage/img/Logo.png" alt="Logo">
+        </div>
+    </header>
+    <main>
+        <section class="text_input">
+            <form id="myForm">
+                <textarea name="chain" class="insert_text" cols="30" rows="10" placeholder="Ingrese el texto aquí" ></textarea>
+                <div class="condition_text">
+                    <div class="message_user">
+                        <img src="./storage/img/IconoExclamacion.png"> <small>Solo letras minúsculas y sin acentos</small>
+                    </div>
+                    <div class="decision_buttons">
+                        <input type="submit" data-accion="encrypt" value="Encriptar">
+                        <input type="submit" data-accion="decrypt" value="Desencriptar">
+                    </div>
+                </div>
+            </form>
+        </section>
+        <section class="end">
+           <article class="form-ouput active">
+            <img src="./storage/img/look.png">
+            <h1>Ningún mensaje fue encontrado</h1>
+            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+           </article>
+           <article class="end_message">
+            <p></p>
+            <input type="button" id="copy" value="Copiar">
+            </article>
+        </section>
+    </main>
+
+</body>
+</html>
