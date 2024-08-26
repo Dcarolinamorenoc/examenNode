@@ -6,14 +6,14 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     let myForm = document.querySelector("#myForm");
-    let form_ouput = document.querySelector(".form-ouput");
-    let form_ouput__menssage = document.querySelector(".end_message");
+    let form_output = document.querySelector(".form-ouput");
+    let form_output__message = document.querySelector(".end_message");
     let p = document.querySelector(".end_message p");
     let btn_copy = document.querySelector("#copy");
     let popup = document.querySelector("#popup");
     let popupMessage = document.querySelector("#popup-message");
     let closePopup = document.querySelector("#close-popup");
-
+    let textArea = document.querySelector(".insert_text");
 
     /**
      * Valida que el texto contenga solo letras minúsculas y espacios.
@@ -21,9 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
      * @param {string} texto - El texto a validar.
      * @returns {boolean} True si el texto es válido, false en caso contrario.
      */
-
-
-
     function validarTexto(texto) {
         const regex = /^[a-z\s]*$/;
         return regex.test(texto);
@@ -34,7 +31,6 @@ document.addEventListener('DOMContentLoaded', function() {
      *
      * @param {string} message - El mensaje a mostrar en el popup.
      */
-
     function showPopup(message) {
         popupMessage.textContent = message;
         popup.style.display = 'block';
@@ -50,7 +46,6 @@ document.addEventListener('DOMContentLoaded', function() {
      * @listens submit
      * @param {Event} e - El evento de envío del formulario.
      */
-
     myForm.addEventListener("submit", function(e){
         e.preventDefault();
         let btn = e.submitter.dataset.accion;
@@ -72,8 +67,8 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .then(response => response.json())
         .then(data => {
-            form_ouput.classList.remove("active");
-            form_ouput__menssage.classList.add("active");
+            form_output.classList.remove("active");
+            form_output__message.classList.add("active");
             p.innerHTML = data.resultado;
         })
         .catch((error) => {
@@ -87,7 +82,6 @@ document.addEventListener('DOMContentLoaded', function() {
      *
      * @listens click
      */
-
     btn_copy.addEventListener("click", function(e){
         let range = document.createRange();
         range.selectNode(p);
@@ -97,8 +91,21 @@ document.addEventListener('DOMContentLoaded', function() {
         document.execCommand('copy');  
         selection.removeAllRanges();  
         p.innerHTML = "";
-        form_ouput__menssage.classList.remove("active");
-        form_ouput.classList.add("active");
+        form_output__message.classList.remove("active");
+        form_output.classList.add("active");
         showPopup("Texto copiado al portapapeles");
+    });
+
+    /**
+     * Maneja el evento de entrada en el textarea.
+     *
+     * @listens input
+     */
+    textArea.addEventListener("input", function() {
+        if (this.value.trim() === "") {
+            form_output.classList.add("active");
+            form_output__message.classList.remove("active");
+            p.innerHTML = "";
+        }
     });
 });
